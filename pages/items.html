@@ -1,1743 +1,1767 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Items</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Home</a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./champions.html">Champions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active ms-1" aria-current="page" href="./items.html">Items</a>
-              </li>
-            </ul>
-          </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./champions.html">Champions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ms-1" aria-current="page" href="./items.html">Items</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <header>
+      <h1 class="m-3 d-flex justify-content-center">Itemy</h1>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="m-2 col-10 d-flex justify-content-center">V League of Legends se itemy používají k vylepšení
+          schopností a statistik postav. Každý item má svůj vlastní efekt, který může být pasivní nebo aktivní, a tyto
+          efekty mohou být kombinovány s efekty dalších itemů, což umožňuje hráčům vytvářet různé strategie.
+
+          Itemy jsou k dispozici v obchodě, který se nachází u každého týmu ve spawnu. Hráči získávají zlato za zabíjení
+          nepřátelských jednotek, účast v zabití nepřátelských šampionů, ničení věží a dalších aktivitách, které lze
+          provádět během hry. S tímto zlatem mohou hráči nakupovat itemy a vylepšovat svou postavu.
+
+          Některé itemy jsou navrženy pro útočné postavy, které se zaměřují na způsobování poškození nepřátelům, zatímco
+          jiné jsou navrženy pro obranné postavy, které se zaměřují na ochranu sebe a svých spoluhráčů.
+
+          Kromě toho, že hráči mohou nakupovat itemy v obchodě, mohou také vytvářet vylepšené verze některých itemů
+          pomocí Receptů. Tyto recepty se skládají z kombinace různých základních itemů a poskytují větší efekty a
+          statistiky, než by byly dostupné v jednotlivých základních itemech.
+
+          Správná volba itemů může být klíčová pro úspěch v League of Legends, a to zejména v průběhu pozdější fáze hry,
+          kdy jsou hráči již silnější a itemy mají větší vliv na výsledek zápasu. Hráči se často učí, jaké itemy
+          používat v závislosti na konkrétní situaci během hry a jaké itemy fungují nejlépe s jejich herním stylem.
+        </div>
+        <div class="col-1"></div>
+      </div>
     </header>
 
-    <section>
-      <header>
-        <h1 class="m-3 d-flex justify-content-center">Itemy</h1>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="m-2 col-10 d-flex justify-content-center">V League of Legends se itemy používají k vylepšení schopností a statistik postav. Každý item má svůj vlastní efekt, který může být pasivní nebo aktivní, a tyto efekty mohou být kombinovány s efekty dalších itemů, což umožňuje hráčům vytvářet různé strategie.
-
-              Itemy jsou k dispozici v obchodě, který se nachází u každého týmu ve spawnu. Hráči získávají zlato za zabíjení nepřátelských jednotek, účast v zabití nepřátelských šampionů, ničení věží a dalších aktivitách, které lze provádět během hry. S tímto zlatem mohou hráči nakupovat itemy a vylepšovat svou postavu.
-              
-              Některé itemy jsou navrženy pro útočné postavy, které se zaměřují na způsobování poškození nepřátelům, zatímco jiné jsou navrženy pro obranné postavy, které se zaměřují na ochranu sebe a svých spoluhráčů.
-              
-              Kromě toho, že hráči mohou nakupovat itemy v obchodě, mohou také vytvářet vylepšené verze některých itemů pomocí Receptů. Tyto recepty se skládají z kombinace různých základních itemů a poskytují větší efekty a statistiky, než by byly dostupné v jednotlivých základních itemech.
-              
-              Správná volba itemů může být klíčová pro úspěch v League of Legends, a to zejména v průběhu pozdější fáze hry, kdy jsou hráči již silnější a itemy mají větší vliv na výsledek zápasu. Hráči se často učí, jaké itemy používat v závislosti na konkrétní situaci během hry a jaké itemy fungují nejlépe s jejich herním stylem.</div>
-            <div class="col-1"></div>
-            </div>
-      </header>
-    
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Starovní Itemy</h2>
-        <div class="row m-5">   
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Temná pečeť.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Temná pečeť</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Slza bohyně.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Slza bohyně</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Doranův prsten.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Doranův prsten</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ostří zloděje kouzel.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ostří zloděje kouzel</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Památný štít.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Památný štít</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Přízračný srp.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Přízračný srp</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ocelové nárameníky.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ocelové nárameníky</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Doranův meč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Doranův meč</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kosa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kosa</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Doranův štít.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Doranův štít</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Mládě ohňodrápa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Mládě ohňodrápa</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Mládě vichrotlapa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Mládě vichrotlapa</h3>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Mládě mechodupa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Mládě mechodupa</h3>
-                </div>
-            </div>
-          </div>
-
-        </div>
-      </article>
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Základní Itemy</h2>
-        <div class="row m-5">
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Čarovný přívěšek.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Čarovný přívěšek</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Dýka.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Dýka</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Lněná vesta.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Lněná vesta</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Korálek života.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Korálek života</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Safírový krystal.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Safírový krystal  </h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Dlouhý meč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Dlouhý meč</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rubínový krystal.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rubínový krystal</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zesilující kniha.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zesilující kniha</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kouzlovzdorná kápě.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kouzluodolná kápě</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kápě hbitosti.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kápě hbitosti</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Lesk.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Lesk</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Stopky.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Stopky</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Razantní hůlka.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Razantní hůlka</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Krumpáč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Krumpáč</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zbytečně dlouhá hůl.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zbytečně dlouhá hůl</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/K. V. meč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>K. V. meč</h3>
-                </div>
-            </div>
-          </div>
-          
-        </div>
-      </article>
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Epické Itemy</h2>
-        <div class="row m-5">
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kircheisův šíp.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kircheisův šíp</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Oko zapomnění.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Oko zapomnění</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zapovězená modla.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zapovězená modla</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Nůž zuřivosti.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Nůž zuřivosti</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Katovo poslání.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Katovo poslání</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zápalokam.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zápalokam</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kroužková vesta.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kroužková vesta</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ostnatá vesta.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ostnatá vesta</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Křišťálový chránič.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Křišťálový chránič</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Okřídlený měsíční plát.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Okřídlený měsíční plát</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Éterická bludička.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Éterická bludička</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ledovcový štít.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ledovcový štít</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zrůdný kodex.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zrůdný kodex</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Upírské žezlo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Upírské žezlo</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Negatronový plášť.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Negatronový plášť</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Obrův opasek.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Obrův opasek</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zrcadlo z bandlovského skla.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zrcadlo z bandlovského skla</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Stopařčin chránič.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Stopařčin chránič</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Košatá bariéra.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Košatá bariéra</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Reflexní luk.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Reflexní luk</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Sekera Krborozených.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Sekera Krborozených</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Dozorcovo brnění.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Dozorcovo brnění</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Bamiho uhlík.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Bamiho uhlík</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Magitechnický alternátor.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Magitechnický alternátor</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Horlivost.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Horlivost</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zubatá dýka.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zubatá dýka</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Bič s železným hrotem.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Bič s železným hrotem</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Caulfieldovo válečné kladivo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Caulfieldovo válečné kladivo</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Fág.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Fág</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ostražitý totemový kámen.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ostražitý totemový kámen</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Tiamant.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Tiamant</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Štít legie.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>štít legie</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Klenot nákazy.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Klenot nákazy</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Přízračná kápě.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Přízračná kápě</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ztracená kapitola.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ztracená kapitola</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Odvěký urychlovač.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Odvěký urychlovač</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Vysávající pohled.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Vysávající pohled</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Polední toulec.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Polední toulec</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kletbosaj.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kletbosaj</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rtuťový pás.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rtuťový pás</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Poslední zašeptání.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Poslední zašeptání</h3>
-                </div>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Starovní Itemy</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Temná pečeť.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Temná pečeť</h3>
             </div>
           </div>
         </div>
-      </article>
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Legendární Itemy</h2>
-        <div class="row m-5">
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Mejaiův zloděj duší.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Mejaiův zloděj duší</h3>
-                </div>
-            </div>
-          </div>
 
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Žhnoucí kadidelnice.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Žhnoucí kadidelnice</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Hůl plynoucí vody.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Hůl plynoucí vody</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Chemotechnický zahnívač.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Chemotechnický zahnívač</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Mikaelovo požehnání.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Mikaelovo požehnání</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Odplata.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Odplata</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Polostínová gléva.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Polostínová gléva</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rytířský slib.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rytířský slib</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zekeovo provázání.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zekeovo provázání</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rychlopalné ohnivé dělo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rychlopalné ohnivé dělo</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Řetězi nenávisti.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Řetězi nenávisti</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Nástup zimy.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Nástup zimy</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Závoj Paní smrti.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Závoj Paní smrti</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rylaino křišťálové žezlo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rylaino křišťálové žezlo</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Hadí tesák.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Hadí tesák</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Guinsoova zuřivá čepel.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Guinsoova zuřivá čepel</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Runaanin hurikán.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Runaanin hurikán</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Tančící přízrak.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Tančící přízrak</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ledové srdce.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ledové srdce</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ostří bouře.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ostří bouře</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Trnobrnění.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Trnobrnění</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Záštita slunečního žáru.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Záštita slunečního žáru</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Hůl prázdnoty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Hůl prázdnoty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Chem-syčácký řetězový meč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Chem-syčácký řetězový meč</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ničitel trupu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ničitel trupu</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Blesková chemonádrž.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Blesková chemonádrž</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Manamune.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Manamune</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Přelom noci.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Přelom noci</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Lovec esence.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Lovec esence</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Malmortiův chřtán.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Malmortiův chřtán</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Otisk duše.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Otisk duše</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Síla přírody.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Síla přírody</label></h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kyrys mrtvého muže.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kyrys mrtvého muže</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Archandělova hůl.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Archandělova hůl</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Masky z hlubin.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Maska z hlubin</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Soustředěný horizont.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Soustředěný horizont</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Stínový plamen.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Stínový plamen</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kosmický pohon.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kosmický pohon</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Morellonomicon.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Morellonomicon</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zhonyiny přesípací hodiny.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zhonyiny přesípací hodiny</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zhouba lichů.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zhouba lichů</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Démonská náruč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Démonská náruč</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Axiomatický oblouk.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Axiomatický oblouk</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Youmuuina přízračná čepel.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Youmuuina přízračná čepel</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Výběrčí.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Výběrčí</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rtuťová šavle.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rtuťová šavle</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Pozdrav od lorda Dominika.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Pozdrav od lorda Dominika</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Připomínka smrtelnosti.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Připomínka smrtelnosti</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Anděl strážný.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Anděl strážný</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Úsvit nad stříbromořím.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Úsvit nad Stříbromořím</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Warmogova zbroj.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Warmogova zbroj</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Randuinovo znamení.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Randuinovo znamení</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Nouzová.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Nouzová</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Černá sekera.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Černá sekera</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Sterakova zástava.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Sterakova zástava</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Nashorův tesák.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Nashorův tesák</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Krvežíznivec.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Krvežíznivec</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Seryldina zášť.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Seryldina zášť</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Chrličův kamenný plát.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Chrličův kamenný plát</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Čepel padlého krále.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Čepel padlého krále</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Tanec smrti.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Tanec smrti</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Titánská hydra.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Titánská hydra</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ostří nekonečna.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ostří nekonečna</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rychlé čepele Navori.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rychlé čepele Navori</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Hladová hydra.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Hladová hydra</h3>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Oštěp Šódžinu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Oštěp Šódžinu</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Rabadonův smrtící klobouk.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Rabadonův smrtící klobouk</h3>
-                </div>
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Slza bohyně.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Slza bohyně</h3>
             </div>
           </div>
         </div>
-      </article>
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Mytické Itemy</h2>
-        <div class="row m-5">
 
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Shurelyina bitevní píseň.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Shurelyina bitevní píseň</h3>
-                </div>
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Doranův prsten.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Doranův prsten</h3>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Říšský rozkaz.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Říšský rozkaz</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Měsíční obnovovač.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Měsíční obnovovač</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Večerháv.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Večerháv</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Medailónek železných Solari.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Medailónek železných Solari</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Koruna roztříštěné královny.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Koruna roztříštěné královny</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Věčný mráz.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Věčný mráz</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Hůl věků.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Hůl věků</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Pěstnice Ledorozených.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Pěstnice Ledorozených</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Soumračná čepel Draktharru.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Soumračná čepel Draktharru</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Lovcův dráp.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Lovcův dráp</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zatmění.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zatmění</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Liandryho ůzkost.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Liandryho úzkost</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ludenova bouře.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ludenova bouře</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Noční sklízeč.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Noční sklízeč</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Magitechnický raketový pás.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Magitechnický raketový pás</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Tvůrce žlebu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Tvůrce žlebu</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Proměnlivý Jak'Sho.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Proměnlivý Jak'Sho</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zářivá ctnost.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zářivá ctnost</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Srdcová ocel.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Srdcová ocel</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Krokolam.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Krokolam</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Krvavá lázeň.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Krvavá lázeň</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Božský rozpolcovač.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Božský rozpolcovač</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Trojsíla.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Trojsíla</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Zabiják krakenů.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Zabiják krakenů</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Síla vychřice.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Síla vychřice</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Nesmrtelný štítový luk.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Nesmrtelný štítový luk</h3>
-                </div>
-            </div>
-          </div>
-
         </div>
-      </article>
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Boty</h2>
-        <div class="row m-5">
 
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Boty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Boty</h3>
-                </div>
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ostří zloděje kouzel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ostří zloděje kouzel</h3>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ionské boty jasnoty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ionské boty jasnoty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Spěšné boty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Spěšné boty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Merkurovy boty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Merkurovy boty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Pohyblivé boty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Pohyblivé boty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Šílencovy boty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Šílencovy boty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Kouzelníkovy boty.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Kouzelníkovy boty</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ocelové chrániče.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ocelové chrániče</h3>
-                </div>
-            </div>
-          </div>
-
-          
         </div>
-      </article>
-      <article>
-        <h2 class="m-3 d-flex justify-content-center">Lektvary, Totemy a Elixíry</h2>
-        <div class="row m-5">
 
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Léčivý lektvar.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Léčivý lektvar</h3>
-                </div>
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Památný štít.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Památný štít</h3>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Doplnitelný lektvar.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Doplnitelný lektvar</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Lektvar lozkladu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Lektvar rozkladu</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Neviditelný totem.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Neviditelný totem</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Věštecká čočka.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Věštecká čočka</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Dalekozraká úprava.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Dalekozraká úprava</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Ovládací totem.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Ovládací totem</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Elixír zloby.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Elixír zloby</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Elixír čarodějnictvý.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Elixír čarodějnictvý</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-2">
-            <div class="card h-100 text-center">
-                <img src="../images/items/Elixír železa.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3>Elixír železa</h3>
-                </div>
-            </div>
-          </div>
-
         </div>
-      </article>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Přízračný srp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Přízračný srp</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ocelové nárameníky.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ocelové nárameníky</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Doranův meč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Doranův meč</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kosa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kosa</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Doranův štít.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Doranův štít</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Mládě ohňodrápa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Mládě ohňodrápa</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Mládě vichrotlapa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Mládě vichrotlapa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Mládě mechodupa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Mládě mechodupa</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Základní Itemy</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Čarovný přívěšek.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Čarovný přívěšek</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Dýka.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Dýka</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Lněná vesta.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Lněná vesta</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Korálek života.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Korálek života</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Safírový krystal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Safírový krystal </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Dlouhý meč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Dlouhý meč</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rubínový krystal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rubínový krystal</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zesilující kniha.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zesilující kniha</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kouzlovzdorná kápě.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kouzluodolná kápě</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kápě hbitosti.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kápě hbitosti</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Lesk.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Lesk</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Stopky.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Stopky</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Razantní hůlka.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Razantní hůlka</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Krumpáč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Krumpáč</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zbytečně dlouhá hůl.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zbytečně dlouhá hůl</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/K. V. meč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>K. V. meč</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Epické Itemy</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kircheisův šíp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kircheisův šíp</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Oko zapomnění.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Oko zapomnění</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zapovězená modla.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zapovězená modla</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Nůž zuřivosti.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Nůž zuřivosti</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Katovo poslání.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Katovo poslání</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zápalokam.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zápalokam</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kroužková vesta.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kroužková vesta</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ostnatá vesta.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ostnatá vesta</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Křišťálový chránič.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Křišťálový chránič</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Okřídlený měsíční plát.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Okřídlený měsíční plát</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Éterická bludička.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Éterická bludička</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ledovcový štít.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ledovcový štít</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zrůdný kodex.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zrůdný kodex</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Upírské žezlo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Upírské žezlo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Negatronový plášť.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Negatronový plášť</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Obrův opasek.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Obrův opasek</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zrcadlo z bandlovského skla.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zrcadlo z bandlovského skla</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Stopařčin chránič.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Stopařčin chránič</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Košatá bariéra.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Košatá bariéra</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Reflexní luk.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Reflexní luk</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Sekera Krborozených.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Sekera Krborozených</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Dozorcovo brnění.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Dozorcovo brnění</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Bamiho uhlík.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Bamiho uhlík</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Magitechnický alternátor.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Magitechnický alternátor</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Horlivost.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Horlivost</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zubatá dýka.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zubatá dýka</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Bič s železným hrotem.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Bič s železným hrotem</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Caulfieldovo válečné kladivo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Caulfieldovo válečné kladivo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Fág.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Fág</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ostražitý totemový kámen.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ostražitý totemový kámen</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Tiamant.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Tiamant</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Štít legie.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>štít legie</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Klenot nákazy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Klenot nákazy</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Přízračná kápě.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Přízračná kápě</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ztracená kapitola.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ztracená kapitola</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Odvěký urychlovač.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Odvěký urychlovač</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Vysávající pohled.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Vysávající pohled</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Polední toulec.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Polední toulec</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kletbosaj.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kletbosaj</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rtuťový pás.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rtuťový pás</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Poslední zašeptání.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Poslední zašeptání</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Legendární Itemy</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Mejaiův zloděj duší.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Mejaiův zloděj duší</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Žhnoucí kadidelnice.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Žhnoucí kadidelnice</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Hůl plynoucí vody.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Hůl plynoucí vody</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Chemotechnický zahnívač.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Chemotechnický zahnívač</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Mikaelovo požehnání.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Mikaelovo požehnání</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Odplata.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Odplata</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Polostínová gléva.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Polostínová gléva</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rytířský slib.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rytířský slib</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zekeovo provázání.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zekeovo provázání</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rychlopalné ohnivé dělo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rychlopalné ohnivé dělo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Řetězi nenávisti.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Řetězi nenávisti</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Nástup zimy.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Nástup zimy</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Závoj Paní smrti.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Závoj Paní smrti</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rylaino křišťálové žezlo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rylaino křišťálové žezlo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Hadí tesák.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Hadí tesák</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Guinsoova zuřivá čepel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Guinsoova zuřivá čepel</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Runaanin hurikán.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Runaanin hurikán</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Tančící přízrak.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Tančící přízrak</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ledové srdce.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ledové srdce</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ostří bouře.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ostří bouře</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Trnobrnění.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Trnobrnění</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Záštita slunečního žáru.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Záštita slunečního žáru</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Hůl prázdnoty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Hůl prázdnoty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Chem-syčácký řetězový meč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Chem-syčácký řetězový meč</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ničitel trupu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ničitel trupu</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Blesková chemonádrž.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Blesková chemonádrž</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Manamune.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Manamune</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Přelom noci.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Přelom noci</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Lovec esence.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Lovec esence</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Malmortiův chřtán.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Malmortiův chřtán</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Otisk duše.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Otisk duše</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Síla přírody.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Síla přírody</label></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kyrys mrtvého muže.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kyrys mrtvého muže</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Archandělova hůl.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Archandělova hůl</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Masky z hlubin.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Maska z hlubin</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Soustředěný horizont.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Soustředěný horizont</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Stínový plamen.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Stínový plamen</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kosmický pohon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kosmický pohon</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Morellonomicon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Morellonomicon</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zhonyiny přesípací hodiny.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zhonyiny přesípací hodiny</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zhouba lichů.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zhouba lichů</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Démonská náruč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Démonská náruč</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Axiomatický oblouk.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Axiomatický oblouk</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Youmuuina přízračná čepel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Youmuuina přízračná čepel</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Výběrčí.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Výběrčí</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rtuťová šavle.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rtuťová šavle</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Pozdrav od lorda Dominika.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Pozdrav od lorda Dominika</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Připomínka smrtelnosti.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Připomínka smrtelnosti</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Anděl strážný.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Anděl strážný</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Úsvit nad stříbromořím.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Úsvit nad Stříbromořím</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Warmogova zbroj.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Warmogova zbroj</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Randuinovo znamení.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Randuinovo znamení</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Nouzová.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Nouzová</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Černá sekera.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Černá sekera</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Sterakova zástava.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Sterakova zástava</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Nashorův tesák.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Nashorův tesák</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Krvežíznivec.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Krvežíznivec</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Seryldina zášť.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Seryldina zášť</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Chrličův kamenný plát.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Chrličův kamenný plát</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Čepel padlého krále.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Čepel padlého krále</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Tanec smrti.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Tanec smrti</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Titánská hydra.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Titánská hydra</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ostří nekonečna.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ostří nekonečna</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rychlé čepele Navori.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rychlé čepele Navori</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Hladová hydra.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Hladová hydra</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Oštěp Šódžinu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Oštěp Šódžinu</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Rabadonův smrtící klobouk.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Rabadonův smrtící klobouk</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Mytické Itemy</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Shurelyina bitevní píseň.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Shurelyina bitevní píseň</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Říšský rozkaz.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Říšský rozkaz</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Měsíční obnovovač.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Měsíční obnovovač</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Večerháv.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Večerháv</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Medailónek železných Solari.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Medailónek železných Solari</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Koruna roztříštěné královny.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Koruna roztříštěné královny</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Věčný mráz.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Věčný mráz</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Hůl věků.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Hůl věků</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Pěstnice Ledorozených.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Pěstnice Ledorozených</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Soumračná čepel Draktharru.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Soumračná čepel Draktharru</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Lovcův dráp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Lovcův dráp</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zatmění.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zatmění</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Liandryho ůzkost.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Liandryho úzkost</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ludenova bouře.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ludenova bouře</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Noční sklízeč.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Noční sklízeč</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Magitechnický raketový pás.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Magitechnický raketový pás</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Tvůrce žlebu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Tvůrce žlebu</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Proměnlivý Jak'Sho.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Proměnlivý Jak'Sho</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zářivá ctnost.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zářivá ctnost</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Srdcová ocel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Srdcová ocel</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Krokolam.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Krokolam</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Krvavá lázeň.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Krvavá lázeň</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Božský rozpolcovač.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Božský rozpolcovač</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Trojsíla.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Trojsíla</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Zabiják krakenů.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Zabiják krakenů</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Síla vychřice.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Síla vychřice</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Nesmrtelný štítový luk.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Nesmrtelný štítový luk</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Boty</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Boty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Boty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ionské boty jasnoty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ionské boty jasnoty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Spěšné boty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Spěšné boty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Merkurovy boty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Merkurovy boty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Pohyblivé boty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Pohyblivé boty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Šílencovy boty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Šílencovy boty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Kouzelníkovy boty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Kouzelníkovy boty</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ocelové chrániče.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ocelové chrániče</h3>
+            </div>
+          </div>
+        </div>
 
 
-    
-      
+      </div>
+    </article>
+    <article>
+      <h2 class="m-3 d-flex justify-content-center">Lektvary, Totemy a Elixíry</h2>
+      <div class="row m-5">
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Léčivý lektvar.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Léčivý lektvar</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Doplnitelný lektvar.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Doplnitelný lektvar</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Lektvar lozkladu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Lektvar rozkladu</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Neviditelný totem.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Neviditelný totem</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Věštecká čočka.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Věštecká čočka</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Dalekozraká úprava.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Dalekozraká úprava</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Ovládací totem.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Ovládací totem</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Elixír zloby.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Elixír zloby</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Elixír čarodějnictvý.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Elixír čarodějnictvý</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 mb-2">
+          <div class="card h-100 text-center">
+            <img src="../images/items/Elixír železa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Elixír železa</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
 
 
 
 
-   
 
 
 
 
 
-    </section>
+
+
+
+
+
+  </section>
+  <footer class="align-items-center py-3 my-4 border-top container">
+    <div class="row">
+      <span class="col text-muted text-center">Text generován pomocí <a
+          href="https://platform.openai.com/playground">GPT-3</a></span>
+      <span class="col text-muted text-center">Obsah z <a
+          href="https://www.leagueoflegends.com/cs-cz/champions/">LOL</a></span>
+    </div>
+  </footer>
 </body>
+
 </html>
